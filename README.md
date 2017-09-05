@@ -1,47 +1,5 @@
-# todo-datival
+Implementation of the [TodoMVC App Specification](https://github.com/tastejs/todomvc/blob/master/app-spec.md) using my [datival framework](https://github.com/mitchdzugan/datival)
 
-A [re-frame](https://github.com/Day8/re-frame) application designed to ... well, that part is up to you.
+Pretty happy with how this turned out. Despite writing datival for a completely separate purpose, was able to write this implemntation quickly and easily without needing to make any changes to datival core.
 
-## Development Mode
-
-### Run application:
-
-```
-lein clean
-lein figwheel dev
-```
-
-Figwheel will automatically push cljs changes to the browser.
-
-Wait a bit, then browse to [http://localhost:3449](http://localhost:3449).
-
-## Production Build
-
-```
-lein clean
-lein uberjar
-```
-
-That should compile the clojurescript code first, and then create the standalone jar.
-
-When you run the jar you can set the port the ring server will use by setting the environment variable PORT.
-If it's not set, it will run on port 3000 by default.
-
-To deploy to heroku, first create your app:
-
-```
-heroku create
-```
-
-Then deploy the application:
-
-```
-git push heroku master
-```
-
-To compile clojurescript to javascript:
-
-```
-lein clean
-lein cljsbuild once min
-```
+I don't have any specific metrics but clicking through a bunch of the example implementations at [TodoMVC](http://todomvc.com/) my implementation was the shortest I found which is awesome as well since that again was not a direct goal of the project.
